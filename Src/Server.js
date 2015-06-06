@@ -36,7 +36,7 @@ class Server extends EventEmitter{
     if(!Data.Type) return ;
     Data.Socket = Socket;
     if(Data.Type === 'Request'){
-      Data.Result = null;
+      Data.Result = '';
       this.emit(Data.SubType, Data.Message, Data);
       this.emit("All", Data.Message, Data);
     } else if(Data.Type === 'Broadcast'){

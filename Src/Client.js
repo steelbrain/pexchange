@@ -29,7 +29,7 @@ class Client extends EventEmitter{
   handleRequest(Data){
     if(!Data.Type) return ;
     if(Data.Type === 'Request'){
-      Data.Result = null;
+      Data.Result = '';
       this.emit(Data.SubType, Data.Message, Data);
       this.emit("All", Data.Message, Data);
     } else if(Data.Type === 'Broadcast'){
