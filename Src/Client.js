@@ -46,7 +46,7 @@ class Client extends EventEmitter{
     return this;
   }
   // Public
-  Request(Type, Message, Socket){
+  Request(Type, Message){
     Message = Message || '';
     let Me = this;
     return new Promise(function(Resolve){
