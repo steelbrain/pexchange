@@ -47,7 +47,7 @@ class Server extends EventEmitter{
     }
   }
   // Public
-  Send(Type, Message, Socket){
+  Broadcast(Type, Message, Socket){
     Socket = Socket || this.Connections[0];
     Message = Message || '';
     Socket.write(JSON.stringify({Type: 'Broadcast', SubType: Type, Message: Message}), "utf8");

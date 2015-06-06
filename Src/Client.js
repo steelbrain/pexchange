@@ -40,7 +40,7 @@ class Client extends EventEmitter{
     }
   }
   // Public
-  Send(Type, Message){
+  Broadcast(Type, Message){
     Message = Message || '';
     this.Socket.write(JSON.stringify({Type: 'Broadcast', SubType: Type, Message: Message}), "utf8");
     return this;
