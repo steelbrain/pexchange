@@ -33,7 +33,7 @@ class Server extends EventEmitter{
   }
   // Internal
   handleRequest(Data, Socket){
-    if(!Data.Type || !Data.Message) return ;
+    if(!Data.Type) return ;
     Data.Socket = Socket;
     if(Data.Type === 'Request'){
       Data.Result = null;
