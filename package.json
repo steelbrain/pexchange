@@ -1,6 +1,6 @@
 {
   "name": "pexchange",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A promise based inter-process data exchange",
   "main": "Main.js",
   "scripts": {
