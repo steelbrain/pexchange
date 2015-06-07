@@ -30,6 +30,7 @@ class Server extends EventEmitter{
         Me.handleRequest(Chunk, Socket);
       });
     });
+    this.emit('Internal:Connection', Socket);
   }
   // Internal
   handleRequest(Data, Socket){
