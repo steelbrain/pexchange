@@ -1,6 +1,8 @@
 PExchange
 ==========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/steelbrain/pexchange.svg)](https://greenkeeper.io/)
+
 PExchange is a promise based information exchange for Node. It allows different processes to communicate with each other.
 
 #### Benefits
